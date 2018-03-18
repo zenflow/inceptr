@@ -1,0 +1,38 @@
+{
+  "name": "inceptr",
+  "version": "1.0.0",
+  "description": "bootstrap a package, with patterns, scripts and packages",
+  "bin": "cli.js",
+  "main": "lib/inceptr.js",
+  "scripts": {
+    "test": "npm run lint && npm run test-only",
+    "test-only": "jest",
+    "fix": "zenflow-lint-js --fix",
+    "lint": "zenflow-lint-js"
+  },
+  "keywords": [
+    "generate",
+    "generator",
+    "scaffold",
+    "scaffolding",
+    "rapid",
+    "rad",
+    "dynamic",
+    "modular"
+  ],
+  "author": {
+    "name": "Matthew Francis Brunetti",
+    "email": "zenflow87@gmail.com"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "execa": "^0.10.0",
+    "minimist": "^1.2.0",
+    "p-memoize": "^1.0.0",
+    "prompts": "^0.1.8"
+  },
+  "devDependencies": {
+    "jest": "^22.4.2",
+    "zenflow-lint-js": "^1.0.0"
+  }
+}
